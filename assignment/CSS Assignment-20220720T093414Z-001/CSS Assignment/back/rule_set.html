@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- GENERAL ---------- */
+
+body {
+  background: #272822;
+  color: #fff;
+  font: 16px/36px Courier, monospace;
+  margin: 0;
+}
+
+h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p { margin: 0; }
+
+.container {
+  height: 276px;
+  left: 50%;
+  margin: -138px 0 0 -220px;
+  position: absolute;
+  top: 50%;
+  width: 440px;
+}
+
+/* ---------- CSS-RULESET ---------- */
+
+#css-ruleset {
+  margin: auto;
+}
+
+#css-ruleset h2 {
+  font-size: 30px;
+  line-height: 48px;
+  margin-bottom: 48px;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+#css-ruleset p {
+  position: relative;
+}
+
+/* ---------- CLASSES ---------- */
+
+.block {
+  border: 1px solid #fff;
+  padding: 4px;
+}
+
+.blue { color: #48beef; }
+.green { color: #7fe22a; }
+.magenta { color: #f92672; }
+.purple { color: #ae81ff; }
+
+.selector:before,
+.pseudo-class:before,
+.pseudo-element:before,
+.declaration:before,
+.property:before,
+.value:before,
+.keyword:before,
+.open-bracket:before {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+}
+
+.selector:after,
+.pseudo-class:after,
+.pseudo-element:after,
+.declaration:after,
+.property:after,
+.value:after,
+.keyword:after,
+.open-bracket:after,
+.end-bracket:after {
+  background: #fff;
+  content: "";
+  position: absolute;
+}
+
+.selector:before {
+  content: "Selector";
+  left: 33px;
+  top: -38px;
+}
+
+.selector:after {
+  height: 12px;
+  left: 64px;
+  top: -12px;
+  width: 1px;
+}
+
+.pseudo-class:before {
+  content: "Pseudo-Class";
+  left: 152px;
+  top: -38px;
+}
+
+.pseudo-class:after {
+  height: 12px;
+  left: 200px;
+  top: -12px;
+  width: 1px;
+}
+
+.pseudo-element:before {
+  content: "Pseudo-Element";
+  left: 289px;
+  top: -38px;
+}
+
+.pseudo-element:after {
+  height: 12px;
+  left: 345px;
+  top: -12px;
+  width: 1px;
+}
+
+.declaration:before {
+  content: "Declaration";
+  left: -92px;
+}
+
+.declaration:after {
+  height: 1px;
+  left: 0px;
+  top: 18px;
+  width: 36px;
+}
+
+.property:before {
+  content: "Property";
+  left: -68px;
+}
+
+.property:after {
+  height: 1px;
+  left: 0px;
+  top: 18px;
+  width: 36px;
+}
+
+.value:before {
+  content: "Value";
+  left: 362px;
+}
+
+.value:after {
+  height: 1px;
+  left: 222px;
+  top: 18px;
+  width: 136px;
+}
+
+.keyword:before {
+  content: "Keyword";
+  left: 362px;
+}
+
+.keyword:after {
+  height: 1px;
+  left: 312px;
+  top: 18px;
+  width: 46px;
+}
+
+.open-bracket:before {
+  content: "Declaration-Block";
+  left: 362px;
+  top: 144px;
+  white-space: nowrap;
+}
+
+.open-bracket:after {
+  height: 118px;
+  left: 430px;
+  top: 36px;
+  width: 1px;
+}
+
+.end-bracket:after {
+  height: 1px;
+  left: 24px;
+  top: 18px;
+  width: 332px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="css-ruleset">
+    
+          <h2>CSS Ruleset</h2>
+    
+          <p>
+            <span class="block selector"><span class="green">.container</span>&nbsp;<span class="magenta">p</span></span><span class="green">:<span class="block pseudo-class">first-child</span>::<span class="block pseudo-element">first-letter</span></span>&nbsp;<span class="block open-bracket">{</span>
+          </p>
+    
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="block declaration"><span class="blue">color</span>:&nbsp;<span class="purple">#000</span>;</span>
+          </p>
+    
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="block property"><span class="blue">font-size</span></span>:&nbsp;<span class="block value"><span class="purple">24</span><span class="magenta">px</span></span>;
+          </p>
+    
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">text-transform</span>:&nbsp;<span class="block keyword"><span class="blue">uppercase</span></span>;
+          </p>
+    
+          <p>
+            <span class="block end-bracket">}</span>
+          </p>
+    
+        </div> <!-- end css-ruleset -->
+    
+      </div> <!-- end container -->
+    
+</body>
+</html>

@@ -1,0 +1,695 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment</title>
+        <style>
+            *{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+            }
+            
+            ul{
+                list-style: square  ;
+                color: rgb(53, 53, 53);
+            }
+            
+            table,th,td,tr{
+                padding: 20px;
+                border-radius: 20px;
+            }
+            
+            table{
+                border-bottom: 1px solid rgb(35, 193, 255);
+                width: 95%;
+                border-collapse: separate;
+                /* background-image: url('../Photo/4.jpg'); */
+                background-color: #FCF6F5FF;
+                /* opacity: 0.9; */
+                background-size: cover;
+                margin-left: 15px;
+                box-shadow: #2B3337;
+            }
+            
+            td:hover{
+                background-color:gray;
+                color: white;
+            }
+            
+            tbody>tr:nth-child(odd){
+                background-color: #89ABE3FF;
+            }
+            
+            .a{
+                width: 4%;
+            }
+            
+            .b{
+                width: 38%;
+            }
+            
+            strong::selection{
+                background-color: #F2AA4CFF;
+                color: black;
+            }
+            
+            .d,.f,.e,.g,.h,.bb{
+                border: 1px solid black;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                padding: 10px;
+                text-align: left;
+            }
+            
+            .d{
+                grid-column: 1/2;
+                grid-row: 1;
+            }
+            
+            .e{
+            grid-column: 1/2;
+            grid-row: 2;
+            }
+            
+            .f{
+            grid-column: 1/2;
+            grid-row: 3;
+            }
+            
+            .g{
+                grid-column: 1/2;
+                grid-row: 4;
+            }
+            
+            .h{
+                grid-column: 2/3;
+                grid-row: 1/5;
+            }
+            
+            .aa{
+                text-decoration: none;
+                color: black;
+            }
+            
+            .cc{
+                background-image: url(./back/bg2.jpg);
+                width: 100%;
+                height: 300px;
+                background-repeat: no-repeat;
+                border: 1px dotted;
+            }
+           
+        .bb{
+                background-color: rgba(238, 221, 255, 0.685);
+                box-shadow: 5px 5px 10px rgb(0, 0, 0)  ;
+            }
+        
+        .dd{
+                background-position: center;
+            }
+        
+        .myblock {
+            margin: auto;
+            border: 2px solid red;
+            width: fit-content;
+            padding: 15px;
+            text-align: center;
+            background-color: lightyellow;
+        }
+          
+        header {
+            font-size: 40px;
+            background-color: lightgreen;
+            margin: auto;
+            width: fit-content;
+        }
+          
+        .myinline {
+            padding: 10px;
+            border: 2px solid blue;
+        }
+          
+        .holder {
+            text-align: center;
+        }
+        
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        li::selection{
+            background-color:#101820FF;
+            color: white;
+        }
+        
+        body {
+            background: whitesmoke;
+            /* color: #fff; */
+            font: 16px/36px Courier, monospace;
+            margin: 0;
+            }
+        
+        img,.contenar{
+            width: 400px;
+            display: inline-block;
+            }
+        
+        .about{
+            padding: 10px;
+            text-align: justify;
+            margin: 0;
+            }
+        
+        .button1,.button2{
+            display: inline-block;
+            }
+        
+        a{
+            text-decoration: none;
+            color: white;
+            }
+        
+        .button1,.button2{
+            border: none;
+             background-color: rgb(111, 8, 246);
+             padding: 10px;
+             border-radius: 15px;
+            font-size: 15px;
+            font-style: bold;
+            text-transform: uppercase;
+            }
+        
+        .last_update{
+             /* display: inline-block; */
+            text-align: right;
+            color:gray;
+            float: right;
+            margin-right: 10px;
+            }
+       
+         .contenar{
+             box-shadow: 5px 5px 6px black;
+            }
+        
+        button:hover{
+            box-shadow: 5px 5px 6px rgba(71, 70, 70, 0.541);
+             transition: box-shadow 0.5s,background-color 0.5s,;
+            background-color: gray;
+            /* padding: 12px; */
+            }
+        
+        .grid_1{
+             display: grid;
+             grid-template-columns: repeat(3,0fr);
+             gap: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1><strong>MODULE: 2 (CSS and CSS 3)</strong></h1>
+            <ol>
+                <h2><strong>1. What are the benefits of using CSS?</strong></h2>
+                <ul><li>CSS plays an important role, by using CSS you simply got to specify a repeated style for element once &amp; use it multiple times as because CSS will automatically apply the required styles.</li><li>The main advantage of CSS is that style is applied consistently across variety of sites. One instruction can control several areas which is advantageous.</li><li>Web designers needs to use few lines of programming for every page improving site speed.</li><li>Cascading sheet not only simplifies website development, but also simplifies the maintenance as a change of one line of code affects the whole web site and maintenance time.</li><li>It is less complex therefore the effort are significantly reduced.</li><li>It helps to form spontaneous and consistent changes.</li><li>CSS changes are device friendly. With people employing a batch of various range of smart devices to access websites over the web, there’s a requirement for responsive web design.</li><li>It has the power for re-positioning. It helps us to determine the changes within the position of web elements who are there on the page.</li><li>These bandwidth savings are substantial figures of insignificant tags that are indistinct from a mess of pages.</li><li>Easy for the user to customize the online page</li><li>It reduces the file transfer size.</li></ul>
+                
+                <h2><strong>2. What are the disadvantages of CSS?</strong></h2>
+                <ul><li>CSS, CSS 1 up to CSS3, result in creating of confusion among &nbsp;web browsers.</li><li>With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.</li><li>There exists a scarcity of security.</li><li>After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the browsers.</li><li>The programing language world is complicated for non-developers and beginners. Different levels of CSS i.e. CSS, CSS 2, CSS 3 are often quite confusing.</li><li>Browser compatibility (some styles sheet are supported and some are not).</li><li>CSS works differently on different browsers. IE and Opera supports CSS as different logic.</li><li>There might be cross-browser issues while using CSS.</li><li>There are multiple levels which creates confusion for non-developers and beginners.</li></ul>
+                
+                <h2><strong>3. What is the difference between CSS2 and CSS3?</strong></h2>
+                <ul>
+                    <li><strong>CCS:</strong> CSS stands for Cascading Style Sheet. Its main objective is to provide styling and fashion to the web page. CSS provides color, layout, background, font, and border properties. CSS features allow better content accessibility, enhanced flexibility, and control, as well as the specification of the characteristics of presentation.</li><br>
+                    <li><strong>CSS3:</strong> CSS3 stands for Cascading Style Sheet level 3, which is the advanced version of CSS. It is used for structuring, styling, and formatting web pages. Several new features have been added to CSS3 and it is supported by all modern web browsers. The most important feature of CSS3 is the splitting of CSS standards into separate modules that are simpler to learn and use.</li><br>
+                </ul>
+                <table>
+                    <caption><strong>Difference between CSS2 and CSS3</strong></caption>
+                <thead>
+                    <th class="a">S.No.</th>
+                    <th class="b"><strong>CSS2</strong></th>
+                    <th class="c"><strong>CSS3</strong></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CSS is capable of positioning texts and objects. </td>
+                        <td>On the other hand, CSS3 is capable of making the web page more attractive and takes less time to create. CSS3 is backward compatible with CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Responsive designing is not supported in CSS</td>
+                        <td>CSS3 is the latest version, hence it supports responsive design.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>CSS cannot be split into modules.</td>
+                        <td>Whereas CSS3 can be breakdown into modules.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Using CSS, we cannot build 3D animation and transformation.</td>
+                        <td>But in CSS3 we can perform all kinds of animation and transformations as it supports animation and 3D transformations.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>CSS is very slow as compared to CSS3</td>
+                        <td>Whereas CSS3 is faster than CSS.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>In CSS we have set of standard colors and it uses basic color schemes only.</td>
+                        <td>Whereas CSS3 has a good collection of HSL RGBA, HSLA, and gradient colors.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>In CSS we can only use single text blocks.</td>
+                        <td>But in CSS3 we can use multi-column text blocks</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>CSS does not support media queries.</td>
+                        <td>But CSS3 supports media queries</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>CSS codes are not supported by all types of modern browsers.</td>
+                        <td>Being the latest version, CSS3 codes are supported by all modern browsers.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>In CSS, designers have to manually develop rounded gradients and corners.</td>
+                        <td>But CSS3 provides advanced codes for setting rounded gradients and corners</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>There is no special effect like shadowing text, text animation, etc. in CSS. The animation was coded in jQuery and JavaScript.</td>
+                        <td>CSS3 has many advance features like text shadows, visual effects, and a wide range of font styles and colors.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>In CSS, the user can add background colors to list items and lists, set images for the list items, etc.</td>
+                        <td>Whereas CSS3 list has a special display property defined in it. Even list items also have counter reset properties.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>CSS was developed in 1996.</td>
+                        <td>CSS3 is the latest version of CSS and was released in 2005.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>CSS is memory intensive.</td>
+                        <td>CSS3 memory consumption is low as compared to CSS.</td>
+                    </tr>
+                </tbody>
+                </table>
+            
+            <h2><strong>4. Name a few CSS style components</strong></h2>
+            <ul>
+                <li>The components of css style are:</li>
+                <ol>
+                    <li>Selecter:HTML element name, id name, class name.</li>
+                    <li>Property:It's like an attribute such as background color,font-size,position,text-align,color,border etc.</li>
+                    <li>Values:which defines property or values allocate for properties.</li>
+                </ol>
+            </ul>
+            
+            <h2><strong>5. What do you understand by CSS opacity?</strong></h2>
+            <ul><p><q>The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.</q></p></ul>
+            <div class="bb">
+                <div class="d"><h4><strong>CSS Demo: opacity</strong></h4></div>
+                <div class="e"><a class="aa" target="mywork" href="back/opacity0.html">opacity: 0;</a></div>
+                <div class="f"><a class="aa" target="mywork" href="back/opacity5.html">opacity: 0.5;</a></div>
+                <div class="g"><a class="aa" target="mywork" href="back/opacity1.html">opacity: 1;</a></div>
+                <div class="h">
+                    <iframe src="back/opacity1.html" name="mywork" frameborder="1" width="700px" height="200px"></iframe>
+                </div>
+            </div>
+            
+            <h2><strong>6. How can the background color of an element be changed?</strong></h2>
+            <ul>
+                <div style="background-color:#9d8dff; color: black;">
+                <li><q>The background-color property sets the background color of an element. The background of an element is the total size of the element, including padding and border (but not the margin). Tip: Use a background color and a text color that makes the text easy to read.</q></li>
+            </div>
+            </ul>
+            
+            <h2><strong>7. How can image repetition of the backup be controlled?</strong></h2>
+            <ul><li>To control the repetition of an image in the background, use the background-repeat property. You can use no-repeat value for the background-repeat property if you do not want to repeat an image, in this case, the image will display only once</li></ul>
+            
+            <ul>
+                <dl>
+                    <h4>Example</h4>
+                </dl>
+                
+                    <li>You can try to run the following code to learn how to work with the background-repeat property:</li></ul><br>
+                <div class="cc"></div>
+            
+                <h2><strong>8. What is the use of the background-position property?</strong></h2>
+            <ul><li>The background-position property sets the starting position of a background image. Tip: By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.</li></ul>
+            <ul>
+                <dl><h4>Example</h4></dl>
+                <li>You can try to run the following code to learn how to work with the background-position property:</li></ul><br>
+            <div class="cc dd"></div>
+            
+            <h2><strong>9. Which property controls the image scroll in the background?</strong></h2>
+            <ul><li><p>background-attachment property</p></li></ul>
+            <ul><li><p>The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.</li></p></ul>
+            
+            <h2><strong>10. Why should background and color be used as separate properties?</strong></h2>
+            <ul>
+                <dl>
+                    <h4>There are two reasons behind this:</h4>
+                </dl>
+                <dd>
+                    <li>It enhances the legibility of style sheets. The background property is a complex property in CSS</li>
+                </dd>
+                <dd>
+                    <li>And if it is combined with color, the complexity will further increase.</li>
+                </dd>
+            </ul>
+            
+            <h2><strong>11. How to center block elements using CSS1?</strong></h2>
+            <ul>
+                <li>The “blocks” are known for taking full line space, forcing other elements to start on a new line. In other words, they have a width of 100% of the webpage or container holding the block.  In this article, we are going to see how to block elements that usually behave and how to center them using CSS.</li>
+                <li><strong>Block Elements Behaviour:</strong> Any element can be set to behave like a block by setting their display property to the block “display: block”. There are some other elements like headers, div tags which are by default block. So they take the full line or full width of the web page or container holding it. Even if our content is taking 20% of the width of the webpage still the block property will reserve the full 100% width of the web page or container holding it.</li>
+                <li>How to center these block elements: We have seen that how this block element behaves, we observe that as they take full line width, to center them we only have the margin property that is controlling them horizontally.</li>
+                <li>We can see that the “text-align : center” is not centering the block elements. They are only centering the non-block or inline-block elements.</li>
+                <dl><h4>Example</h4></dl>
+                <div>
+    
+                    <div class="myblock">
+                        div who has default display : block
+                    </div>
+                    
+                    <div class="holder">
+                        <div style="display: inline-block" class="myinline">
+                            inline block paragraph 1
+                        </div>
+                    
+                        <div style="display: inline-block" class="myinline">
+                            inline block paragraph 2
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        
+        <h2><strong>12. How to maintain the CSS specifications?</strong></h2>
+        <ul>
+            <li>css properties should be implemented using detailed algorithms and code samples, as well as tabular data, as part of a browser vendor’s implementation of the Specification. The language is also known as a syntax and data type in the Specification. A detailed explanation of CSS Selectors can be found here. </li>
+            <li>The Specification defines how CSS properties should be implemented by browser vendors along with detailed algorithms, code samples and tabular information.</li>
+            <br>
+            <li>The Specification also include:</li>
+                <dd>
+                        <li>The syntax and data types of the language</li>
+                        <li>Detailed explanation on CSS Selectors</li>
+                        <li>How you can assign values to properties</li>
+                        <li>The Cascade (the "C" in CSS)</li>
+                        <li>How inheritance works</li>
+                        <li>The Box Model e.t.c</li>
+                </dd>
+        </ul>
+        
+        <h2><strong>13. What are the ways to integrate CSS as a web page?</strong></h2>
+        <ul>
+            <li>The 3 ways to insert CSS into your web pages</li>
+            <ol type="1">
+                <li>Inline CSS: Requires the style attribute placed inside an HTML element.</li>
+                <!-- <pre style="border: 1px solid;background-color: rgba(58, 57, 57, 0.733);color: white;width: 400px;text-align: center;"> &#60;p style="padding-bottom:12px;">Your Text</p></pre> -->
+                <!-- https://www.csstutorial.net/css_misc_inserting.php -->
+                <li>Internal CSS: Requires the &#60;style&#62; element placed inside the head section of an HTML file.</li>
+                <li>External CSS: Requires the &#60;link&#62; element placed inside the head section of an HTML file.</li>
+                </ol>
+            </ul>
+            
+            <h2><strong>14. What is embedded style sheets?</strong></h2>
+            <ul><li>Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the &#60;style>&#60;/style> tags containing the CSS properties in the head of your document.</li></ul>
+            
+            <h2><strong>15. What are the external style sheets?</strong></h2>
+            <ul>
+                <li>To apply a rule to multiple pages, an external style sheet is used. An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet. </li>
+                <li>The link to an external style sheet is placed within the head section of the page.</li>
+                <div style="background-color:rgb(117 194 239);width: 1200px;color: black;margin-left: 5px; border-radius: 9px;box-shadow: 5px 5px 10px grey;">
+                <pre>
+
+                    &#60;head>
+                    &#60;link rel="stylesheet" type="text/css" href="mystyle.css">
+                    &#60;/head>
+                </pre>
+                </div>
+                <li>The actual style sheet file will contain CSS rules that are then applied across the entire page. For example:</li>
+                <div style="background-color:rgb(117 194 239);width: 1200px;color: black;margin-left: 5px; border-radius: 9px;box-shadow: 5px 5px 10px grey;">
+                    <pre>
+    
+                        body{
+                            background-color: grey;
+                            width: 700px;
+                            color: white;
+                            margin-left: 200px;
+                        }
+                    </pre>
+                    </div>
+            </ul>
+            
+            <h2><strong>16. What are the advantages and disadvantages of using external style sheets?</strong></h2>
+            <ul>
+                <li>The greatest points of interest in external style sheets are that they can be connected to different records while being overseen from a single style sheet. This keeps code DRY and improves productivity and comfort. The weaknesses are that it might decrease the loading time in some situations.</li><br>
+            </ul>
+                <table>
+                    <caption><strong>Advantages And Disadvantages</strong></caption>
+                    <thead>
+                        <th class="a"><strong>S.No.</strong></th>
+                        <th class="b"><strong>Advantages</strong></th>
+                        <th class="c"><strong>Disadvantages</strong></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>The style of a few documents can be controlled from the site by utilizing them.</td>
+                            <td>The additional download is expected to import documents having style information.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Multiple HTML elements can have numerous documents, where classes can be made.</td>
+                            <td>To render the documents, the outer template ought to be stacked.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td> To assemble styles in complex circumstances, selector and grouping strategies are utilized.</td>
+                            <td>Not practical for small style definitions.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            <h2><strong>17. What is the meaning of the CSS selector</strong></h2>
+            <ul>
+                <li>A CSS selector selects the HTML element(s) you want to style.</li>
+                <li>CSS selectors are used to "find" (or select) the HTML elements you want to style.</li>
+                <dl><h4>We can divide CSS selectors into five categories:</h4></dl>
+                <dd>
+                    <li>
+                        Simple selectors (select elements based on name, id, class)</li>
+                </dd>
+                <dd><li>Combinator selectors (select elements based on a specific relationship between them)</li></dd>
+                <dd><li>Pseudo-class selectors (select elements based on a certain state)</li></dd>
+                <dd><li>Pseudo-elements selectors (select and style a part of an element)</li></dd>
+                <dd><li>Attribute selectors (select elements based on an attribute or attribute value)</li></dd>
+            </ul>
+            
+            <h2><strong>18. What are the media types allowed by CSS?</strong></h2>
+            <ul>
+                <li>CSS media types allow you to format your documents to be presented correctly on various types of media such as screen, print, an aural browser, etc.</li>
+                <li>3 ways of specifying CSS Media types</li>
+                <div style="background-color: rgb(120 198 243);width: 1200px;color: black;margin-left: 5px; border-radius: 9px;box-shadow: 5px 5px 10px grey;">
+                    <pre>
+    
+                       1.Linked style sheets:
+    
+                        &#60;link rel="stylesheet" type="text/css" media="print" href="print.css">
+                    </pre>
+                </div>
+                <div style="background-color: rgb(120 198 243);width: 1200px;color:black;margin-left: 5px; border-radius: 9px;box-shadow: 5px 5px 10px grey;">
+                    <pre>
+    
+                       2.Imported style sheets:
+    
+                        &#60;style type="text/css" media="print, handheld">
+                        @import "basic.css";
+                        &#60;/style>
+                    </pre>
+                </div><div style="background-color:rgb(120 198 243);width: 1200px;color:black;margin-left: 5px; border-radius: 9px;box-shadow: 5px 5px 10px grey;">
+                    <pre>
+    
+                       3.Inline style sheets, through the @media rule:
+    
+                        &#60;style type="text/css">
+                        @media projection{
+                        body{ background-color:#FFFFFF; }
+                        #heading{ font-size:28px; }
+                        }
+                        &#60;/style>
+                    </pre>
+                </div>
+                <br>
+            </ul>
+                <table>
+                    <caption><strong>CSS Media Types</strong></caption>
+                    <thead>
+                        <tr>
+                        <th class="a"><strong>S.No.</strong></th>
+                        <th class="b"><strong>Media Type</strong></th>
+                        <th class="c"><strong>Description</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>all</td>
+                            <td>Suitable/intended for all devises (default).</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>aural</td>
+                            <td>Intended for speech synthesizers.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>braille</td>
+                            <td>Intended for braille tactile feedback devices.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>embossed</td>
+                            <td>Intended for paged braille printers.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>handheld</td>
+                            <td>Intended for handheld devices (typically small screen, monochrome, limited bandwidth).</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>print</td>
+                            <td>Intended for printed documents (applies to docs viewed in print preview mode too).</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>projection</td>
+                            <td> Intended for projected presentations (ie: projectors or print to transparencies). </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>screen</td>
+                            <td>Intended for computer screens.</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>tty</td>
+                            <td> Intended for media using a fixed-pitch character grid (ie: teletypes or terminals). </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>tv</td>
+                            <td> Intended for television-type devices. </td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            <h2><strong>19. What is the rule set?</strong></h2>
+            <ul><li>A CSS rule set contains one or more selectors and one or more declarations. The selector(s), which in this example is h1 , points to an HTML element. The declaration(s), which in this example are color: blue and text-align: center style the element with a property and value.</li></ul><br>
+            <div >
+                <iframe src="back/rule_set.html"style="border-radius: 40px;box-shadow:10px 10px 15px black ;"  width="1280px" height="500px" frameborder="0"></iframe>
+            </div>
+            
+            <h2><strong>20. Create Layouts</strong></h2>
+            <div class="grid_1">
+                <div class="contenar">
+                    <div class="thumbnail">
+                        <img src="./back/poc1.jpg" alt="">
+                    </div>
+                    <div class="about">
+                        Pirates of the Caribbean: The Curse of the Black Pearl is a 2003 American fantasy swashbuckler film directed by Gore Verbinski and the first film in the Pirates of the Caribbean film series. Produced by Walt Disney Pictures and Jerry Bruckheimer, the film is based on Walt Disney's Pirates of the Caribbean attraction at Disney theme parks.
+                    </div>
+                    <div>
+                        <div class="button">
+                        <button class="button1"><a href="https://www.youtube.com/watch?v=naQr0uTrH_s" target="_blank">Trailer</a></button>
+                         <button class="button2"><a href="https://www.hotstar.com/in/movies/pirates-of-the-caribbean-the-curse-of-the-black-pearl/1660010115" target="_blank">Watch </a></button>
+                            
+                        </div>
+                    </div>
+                </div><div class="contenar">
+                    <div class="thumbnail">
+                        <img src="./back/poc2.jpg" alt="">
+                    </div>
+                    <div class="about">
+                        Pirates of the Caribbean: Dead Man's Chest is a 2006 American fantasy swashbuckler film. It is the second installment of the Pirates of the Caribbean film series and the sequel to Pirates of the Caribbean: The Curse of the Black Pearl (2003). It was directed by Gore Verbinski, written by Ted Elliott and Terry Rossio, and produced by Jerry Bruckheimer.
+                    </div>
+                    <div>
+                        <div class="button">
+                        <button class="button1"><a href="https://www.youtube.com/watch?v=SNA-Ezahmok" target="_blank">Trailer</a></button>
+                         <button class="button2"><a href="https://www.hotstar.com/in/movies/pirates-of-the-caribbean-dead-mans-chest/1660000012" target="_blank">Watch </a></button>
+                            
+                        </div>
+                    </div>
+                </div><div class="contenar">
+                    <div class="thumbnail">
+                        <img src="./back/poc3.jpg" alt="">
+                    </div>
+                    <div class="about">
+                        Pirates of the Caribbean: At World's End is a 2007 American epic fantasy swashbuckler film directed by Gore Verbinski, the third installment in the Pirates of the Caribbean film series and the sequel to Dead Man's Chest (2006). It follows Will Turner, Elizabeth Swann, Hector Barbossa, and the crew of the Black Pearl as they seek to rescue Captain Jack Sparrow.
+                    </div>
+                    <div>
+                        <div class="button">
+                        <button class="button1"><a href="https://www.youtube.com/watch?v=HKSZtp_OGHY" target="_blank">Trailer</a></button>
+                         <button class="button2"><a href="https://www.hotstar.com/in/movies/pirates-of-the-caribbean-at-worlds-end/1660000055" target="_blank">Watch </a></button>
+                            
+                        </div>
+                    </div>
+                </div><div class="contenar">
+                    <div class="thumbnail">
+                        <img src="./back/poc4.jpg" alt="">
+                    </div>
+                    <div class="about">
+                        Pirates of the Caribbean: On Stranger Tides is a 2011 American fantasy swashbuckler film, the fourth installment in the Pirates of the Caribbean film series and a standalone sequel to At World's End (2007). It is the first film in the series not to be directed by Gore Verbinski, replaced by Rob Marshall. Jerry Bruckheimer again served as producer.
+                    </div>
+                    <div>
+                        <div class="button">
+                        <button class="button1"><a href="https://www.youtube.com/watch?v=0BXCVe8Yww4" target="_blank">Trailer</a></button>
+                         <button class="button2"><a href="https://www.hotstar.com/in/movies/pirates-of-the-caribbean-on-stranger-tides/1260018338" target="_blank">Watch </a></button>
+                            
+                        </div>
+                    </div>
+                </div><div class="contenar">
+                    <div class="thumbnail">
+                        <img src="./back/poc5.jpg" alt="">
+                    </div>
+                    <div class="about">
+                        Pirates of the Caribbean: Dead Men Tell No Tales (released internationally as Pirates of the Caribbean: Salazar's Revenge) is a 2017 American swashbuckler fantasy film directed by Joachim Rønning and Espen Sandberg and written by Jeff Nathanson, from a story by Nathanson and Terry Rossio. Produced by Jerry Bruckheimer and distributed by Walt Disney Studios Motion Pictures
+                    </div>
+                    <div>
+                        <div class="button">
+                        <button class="button1"><a href="https://www.youtube.com/watch?v=Hgeu5rhoxxY" target="_blank">Trailer</a></button>
+                         <button class="button2"><a href="https://www.hotstar.com/in/movies/pirates-of-the-caribbean-salazars-revenge/1260018339" target="_blank">Watch</a></button>
+                            
+                        </div>
+                    </div>
+                </div><div class="contenar">
+                    <div class="thumbnail">
+                        <img src="./back/pushpa.jpg" alt="">
+                    </div>
+                    <div class="about">
+                        Pushpa: The Rise – Part 01 is a 2021 Indian Telugu-language action drama film[7] written and directed by Sukumar. Produced by Mythri Movie Makers in association with Muttamsetty Media, it stars Allu Arjun as the titular character alongside Fahadh Faasil (his Telugu debut), and Rashmika Mandanna while Jagadeesh Prathap Bandari, Sunil, Rao Ramesh, Dhananjay, Anasuya Bharadwaj, Ajay and Ajay Ghosh play supporting roles.
+                    </div>
+                    <div>
+                        <div class="button">
+                        <button class="button1"><a href="https://www.youtube.com/watch?v=pKctjlxbFDQ" target="_blank">Trailer</a></button>
+                         <button class="button2"><a href="https://www.primevideo.com/detail/0QH32UG7NRSFRGZT78NFD6KED7/ref=atv_sr_def_c_unkc_1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B09PR53BZ4&qid=1657808418" target="_blank">Watch</a></button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </ol>
+        </div>
+    </body>
+    </html>
