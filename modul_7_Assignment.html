@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul_7_Assignment</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MODULE: 7 (JQuery Basic, Effects & Advance)</h1>
+    <!-- que1 -->
+
+    <h3>1. What is JQuery?</h3>
+
+    <p>&#8921</p>
+
+    <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JQuery:</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JQuery is a fast, small, cross-platform and feature-rich JavaScript library.
+        It is designed to simplify the client-side scripting of HTML. It makes things like HTML document traversal and
+        manipulation, animation, event handling, and AJAX very simple with an easy-to-use API that works on a lot of
+        different type of browsers.</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The main purpose of jQuery is to provide an easy way to use JavaScript on
+        your website to make it more interactive and attractive. It is also used to add animation.</p>
+
+    <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp What is JQuery:</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JQuery is a small, light-weight and fast JavaScript library. It is
+        cross-platform and supports different types of browsers. It is also referred as ?write less do more? because it
+        takes a lot of common tasks that requires many lines of JavaScript code to accomplish, and binds them into
+        methods that can be called with a single line of code whenever needed. It is also very useful to simplify a lot
+        of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</p>
+    <ul>
+        <li>JQuery is a small, fast and lightweight JavaScript library.</li>
+        <li>JQuery is platform-independent.</li>
+        <li>JQuery means "write less do more".</li>
+        <li>JQuery simplifies AJAX call and DOM manipulation.</li>
+    </ul>
+
+    <!-- que2 -->
+
+    <h3>2. How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery, JQuery Animation?</h3>
+
+    <p>&#8921</p>
+
+    <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1. How to Apply CSS Using JQuery:</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp In this article, we will explore how we can apply CSS styles to HTML
+        elements. It is recommended that you have some basic knowledge of HTML, CSS, JavaScript, and jQuery before
+        beginning this article.</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp It is possible to change the CSS property of an element by using a simple
+        JavaScript API, but we try to complete this challenge using jQuery css() method.</p>
+
+    <b>Syntax:</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $().css(propertyname, value);</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $().css(properties);</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp There are many types of CSS methods, which means that each method has the
+        same name but takes different parameters. We will discuss only two methods, one of which is used to change a
+        single CSS property, while the other is used to change multiple CSS properties simultaneously. With the second
+        method, you can pass a JSON string object as a parameter that you want to apply to the HTML element.</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp JSON string objects contain CSS properties along with their values, and the
+        first method only takes 2 parameters, namely the property name and the value.</p>
+
+    <b>Example:</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp By clicking the button, it adds multiple CSS properties to the selected
+        element, but by double-clicking the button, it adds only one CSS property. The motive of this example is to show
+        the use of two types of CSS methods which are discussed.</p>
+
+    <p>&nbsp
+        < body style=" text - align : center ; <br>     
+      border : 2px solid green ; <br>
+      min-height : 240px ; "> <br>
+            < h1 style=" color :green ; "> <br>
+                Project <br>
+                < / h1>
+                    < p id=" context "> <br>
+                        DhananjaySinh Mori <br>
+                        < / p> <br>
+                            < br> <br>
+                                < button id=" change "> <br>
+                                    clickme <br>
+                                    < / button> <br>
+
+                                        let css _ property = <br>
+                                        { <br>
+                                        " color " : " green " , <br>
+                                        " font - size " : " 20px " <br>
+                                        } <br>
+                                        $ ( ' # change ' ) . on ( ' click ' , function ( ) { <br>
+                                        // For multiple css property <br>
+                                        $ ( ' # context ' ) . css ( css _ property ) ; <br>
+                                        } ) ; <br>
+                                        $ ( ' # change ' ) . on ( ' dblclick ' , function ( ) { <br>
+                                        // For single css property <br>
+                                        $ ( ' # context ' ) . css ( ' display ' , ' none ' ) ; <br>
+                                        } ) <br>
+    </p>
+
+    <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2. How to Add Class and Remove Class in JQuery</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The addClass() or removeClass() methods are used to add the CSS classes when
+        there is a need to add to our webpage when there is some event listener or to create some kind of effect.
+    <p>
+
+        <b>Syntax:</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $().css(propertyname, value);</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $().css(properties);</p>
+
+    <ul>
+        <b>Adding a class:</b>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $('selector').addClass(class_name);
+        </p>
+        <b>Removing a class:</b>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $('selector').removeClass(class_name);
+        </p>
+    </ul>
+
+    <b>Example:</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The following example adds a class that makes the background colour black
+        when clicked on ADD CLASS button and also removes that added class when clicked on the REMOVE CLASS button.</p>
+
+    <p>&nbsp
+        < style> <br>
+            h1 {color : #006600 ;} <br>
+
+            button {color : white ; <br>
+            background-color : #006600 ; <br>
+            width : auto ; <br>
+            height : 30px ;} <br>
+
+            body {text-align : center ; } <br>
+
+            div {margin : 10px ; <br>
+            height : 150px ; <br>
+            width : 150px ; <br>
+            position : relative ; <br>
+            text-align : center ; <br>
+            display : flex ; <br>
+            left : 215px ;} <br>
+
+            .bg-black {background-color : black ; } <br>
+            < / style> <br>
+                < /head> <br>
+
+                    < body> <br>
+                        < h1>DhananjaySinh Mori< / h1> <br>
+
+                                < button id=" btnadd "> ADD CLASS < / button> <br>
+                                        < button id=" btnremove "> REMOVE CLASS < / button> <br>
+
+                                                < script> <br>
+                                                    $ ( document ) .ready ( function ( ) { <br>
+                                                    $ ( ' # btnadd ' ) .click ( function ( ) { <br>
+                                                    $ ( ' img ' ) .addClass ( ' bg-black ' ) ; <br>
+                                                    } ) ; <br>
+                                                    $ ( ' # btnremove ' ) .click(function ( ) { <br>
+                                                    $ ( ' img ' ).removeClass ( ' bg-black ' ) ; <br>
+                                                    } ) ; <br>
+    </p>
+
+    <b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3. JQuery Animation?</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The animate() is an inbuilt method in jQuery which is used to change the
+        state of the element with CSS style. This method can also be used to change the CSS property to create the
+        animated effect for the selected element.</p>
+
+    <b>Syntax:</b>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (selector).animate({styles}, para1, para2, para3 ) ; </p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Here “selector” is the selected element. </p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b> Parameter:</b> It accepts four parameters which are specified below</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b> Styles:</b> It helps to set new css property.</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b> para1:</b> It is optional parameter and used to set the speed of the
+        parameter and its default value is 400 millisecond..</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>para2:</b> It is optional and this specifies the speed of the element at
+        different position.</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>para3:</b> It is optional function that is used to be perform after
+        animation is complete.</p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Return Value:</b> It returns the change that made by using the above
+        method.
+    </p>
+
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp jQuery
+        code to show the working of animate() method:</p>
+
+    <b>Example:</b>
+
+    <p>
+        < script> <br>
+
+            $ ( document ).ready( function ( ) { <br>
+            $( " # b1 " ).click( function ( ) { <br>
+            $ ( " # box " ).animate ( { <br>
+            width: " 300px " <br>
+            } ) ; <br>
+            $ ( " # box " ).animate ( { <br>
+            height : "300px" <br>
+            } ) ; <br>
+            } ) ; <br>
+            } ) ; <br>
+            < / script> <br>
+                < style> <br>
+                    div {width : 100px ; <br>
+                    height : 100px ; <br>
+                    background-color : green ; } <br>
+
+                    # b1 { margin-top : 10px ; } <br>
+                    < / style> <br>
+                        < / head> <br>
+
+                            < body> <br>
+                                < div id=" box ">
+                                    < / div> <br>
+                                        < button id=" b1 "> Click Here ! < / button> <br>
+                                                < / body> <br>
+
+
+    </p>
+
+     <!-- que3 -->
+
+     <h3>3. How to create slider with animation? </h3>
+
+     <p>&#8921</p>
+
+     <iframe src="" frameborder="0"></iframe>
+</body>
+
+</html>
